@@ -1,0 +1,88 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body{
+  background-color: rgb(35, 171, 183);
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.top{
+  position: absolute;
+  top: -55%;
+  left: -25%;
+  z-index: -1;
+}
+.bottom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 130px auto;
+}
+.up{
+  height: 150px;
+  width: 450px;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 10px 10px 0px 0px;
+}
+.down{
+  height: 300px;
+  width: 450px;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+.profile{
+  position: relative;
+  background-image: url("./images/image-victor.jpg");
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 80px;
+}
+.age{
+  opacity: 0.5;
+}
+.nation{
+  opacity: 0.5;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.media{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  line-height: 0.2;
+}
+.n{
+  font-size: 20px;
+  font-weight: bold;
+}
+.t{
+  font-size: 12px;
+  opacity: 0.5;
+}
+@media (max-width: 768px){
+  .up, .down{
+    width: 350px;
+  }
+  .top{
+  top: -40%;
+  left: -80%;
+  height: 500px;
+}
+}
